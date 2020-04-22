@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Delete Student</title>
+</head>
+<body><center><br><br><br><br><br>
+<h2>Delete The Required Student</h2>
+  <table border=1 width=40%>
+  <tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Action</th>
+  </tr>
+  <tr th:each="tempStudent : ${list}" align="center">
+  <td th:text="${tempStudent.id}"/>
+  <td th:text="${tempStudent.name}"/>
+  <td th:text="${tempStudent.email}"/>
+ <td> <a th:href="@{/find(id=${tempStudent.id})}"> Delete</a> </td> 
+  </tr>
+  </table>
+  <br><br><br>
+  <a th:href="@{/}">Back to Home Page</a>
+  </center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home Page</title>
+</head>
+<body>
+<center>
+<br><br><br><br><h3>The details are updated as below ...!!!</h3>
+<table border=1 width=30%>
+  <tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Email</th>
+  </tr>
+  <tr align="center">
+  <td th:text="${newStudent.id}" />
+  <td th:text="${newStudent.name}" />
+  <td th:text="${newStudent.email}" />
+  </tr>
+  </table>
+  <br><br><br>
+  <a th:href="@{/}">Home Page</a>
+  </center>
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home Page</title>
+<style>
+fieldset{width:30%}
+</style>
+</head>
+<body><center>
+<br><br><br><border=1>
+ <fieldset><legend><strong>HOME</strong></legend><br><br>
+<h3><a th:href="@{/students}">Display Students</a><br><br><br>
+<a th:href="@{/addForm}">Add Student</a><br><br><br>
+<a th:href="@{/deleteForm}">Delete Student</a><br><br><br>
+<a th:href="@{/updateForm}">Update Student</a></h3><br><br></fieldset></border></center>
+</body>
+</html>

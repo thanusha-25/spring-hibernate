@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Delete Student</title>
+</head>
+<body>
+<center>
+<br><br><br><br><br><br>
+<h2>Do you wish to delete the below record ???</h2>
+<br><br>
+
+ <table border=1 width=30%>
+  <tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Email</th>
+  </tr>
+  <tr align="center">
+  <td th:text="${studentList.id}"/>
+  <td th:text="${studentList.name}"/>
+  <td th:text="${studentList.email}"/>
+  </tr>
+  </table>
+  <br><br><br><br>
+<a th:href="@{/}">Home Page</a>
+  <a th:href="@{/deleteForm}">Go Back to Delete Page</a><br><br><br>
+  <a th:href="@{/delete(id=${studentList.id})}">Confirm to delete ??</a><br><br><br>
+  </center>
+  </body>
+  </html>
+  
+  
